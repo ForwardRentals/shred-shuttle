@@ -76,6 +76,14 @@ footer.foot{background:#0a0a0a;color:rgba(255,255,255,.6);text-align:center;padd
 @media(max-width:900px){.hero .wrap,.g4,.g3,.split,.cgrid{grid-template-columns:1fr}.hero .wrap{gap:32px}.logo-stage{order:-1}
 .nav-links{position:fixed;inset:68px 0 auto 0;background:var(--bg);flex-direction:column;align-items:stretch;gap:0;padding:8px 0;display:none;border-bottom:1px solid var(--line)}.nav-links.show{display:flex}.nav-links a{padding:13px 7vw}.nav-links .btn{margin:10px 7vw}.nav-toggle{display:block}
 table{font-size:.84rem}th,td{padding:10px 12px}}
+.media-img{display:block;width:100%;height:100%;object-fit:cover}
+.thumb{margin:-28px -28px 20px;height:172px;overflow:hidden;border-radius:18px 18px 0 0}.thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:.4s}.scard:hover .thumb img{transform:scale(1.05)}
+.gallery{display:grid;gap:14px;margin-top:34px}.gallery.cols4{grid-template-columns:repeat(4,1fr)}.gallery.cols3{grid-template-columns:repeat(3,1fr)}
+.gallery .ph{border-radius:14px;overflow:hidden;aspect-ratio:4/3;border:1px solid var(--line);box-shadow:var(--shadow)}.gallery .ph img{width:100%;height:100%;object-fit:cover;display:block;transition:.45s}.gallery .ph:hover img{transform:scale(1.06)}
+.figure{border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);margin-top:34px}.figure img{width:100%;display:block}
+.plogo{height:52px;width:auto;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 14px;object-fit:contain;margin-bottom:16px}
+.shed-fig{border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);margin-top:24px}.shed-fig img{width:100%;display:block}
+@media(max-width:760px){.gallery.cols4,.gallery.cols3{grid-template-columns:repeat(2,1fr)}}
 </style></head>
 <body>
 <svg width="0" height="0" style="position:absolute"><symbol id="skull" viewBox="0 0 120 132"><path fill-rule="evenodd" d="M60 4C30 4 14 26 14 52c0 16 7 27 17 34v13c0 6 5 11 11 11h3v-9a3 3 0 0 1 6 0v9h6v-9a3 3 0 0 1 6 0v9h6v-9a3 3 0 0 1 6 0v9h3c6 0 11-5 11-11V86c10-7 17-18 17-34C106 26 90 4 60 4ZM40 38a13 15 0 0 0 0 30 13 15 0 0 0 0-30ZM80 38a13 15 0 0 0 0 30 13 15 0 0 0 0-30ZM60 62l9 20H51Z"/></symbol></svg>
@@ -97,17 +105,17 @@ table{font-size:.84rem}th,td{padding:10px 12px}}
     <div class="hero-cta"><a class="btn btn-primary" href="https://squamishshredshuttle.checkfront.com/reserve/" target="_blank" rel="noopener">Reserve a Seat →</a><a class="btn btn-ghost" href="#mtb">See Pricing</a></div>
     <div class="stats"><div class="stat"><strong>~900m</strong><span>Climb / shuttle</span></div><div class="stat"><strong>20 min</strong><span>Up the hill</span></div><div class="stat"><strong>7 days</strong><span>Private groups</span></div></div>
   </div>
-  <div class="logo-stage"><div class="patch"><img src="logo.png" alt="The Squamish Shred Shuttle" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><div class="fallback" style="display:none"><svg class="skull"><use href="#skull"/></svg></div></div></div>
+  <div class="logo-stage"><div class="patch"><img src="media/mtb-trail.jpg" alt="The Shred Shuttle's lifted 4x4 van below the Stawamus Chief" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><div class="fallback" style="display:none"><svg class="skull"><use href="#skull"/></svg></div></div></div>
 </div></section>
 
 <section id="services"><div class="wrap">
   <span class="eyebrow">What we run</span><h2 class="sec-title">Four ways to ride</h2>
   <p class="sec-intro">From single shuttle laps to a 40-passenger wedding bus — we've got the Sea to Sky covered.</p>
   <div class="grid g4" style="margin-top:40px">
-    <article class="scard"><div class="ic">🚵</div><h3>MTB Shuttles</h3><p>Lap the best of Diamond Head — Meadow of the Grizzly, 19th Hole, Half Nelson — without the climb.</p><div class="price">From $20 / lap</div><a class="more" href="#mtb">Shuttle pricing →</a></article>
-    <article class="scard"><div class="ic">🏂</div><h3>Ski &amp; Snowboard</h3><p>Round-trip bus between Squamish and Whistler on weekends, holidays and Pro-D days.</p><div class="price">$30 round trip · 10-pack $280</div><a class="more" href="#ski">Winter schedule →</a></article>
-    <article class="scard"><div class="ic">🚐</div><h3>Private Charters</h3><p>Group rides, events, parties or a custom bike holiday for visiting crews. The whole shuttle, your schedule.</p><div class="price">$160–$190 / hr · 3 hr min</div><a class="more" href="#private">Get a quote →</a></article>
-    <article class="scard"><div class="ic">💍</div><h3>Weddings</h3><p>Guest shuttles across Squamish, Whistler &amp; Pemberton. 20, 32 &amp; 40-passenger buses with planning support.</p><div class="price">From $170 / hr + GST</div><a class="more" href="#weddings">Wedding details →</a></article>
+    <article class="scard"><div class="thumb"><img src="media/mtb-action.jpg" alt="Muddy bikes loaded on the Shred Shuttle rack" loading="lazy"></div><div class="ic">🚵</div><h3>MTB Shuttles</h3><p>Lap the best of Diamond Head — Meadow of the Grizzly, 19th Hole, Half Nelson — without the climb.</p><div class="price">From $20 / lap</div><a class="more" href="#mtb">Shuttle pricing →</a></article>
+    <article class="scard"><div class="thumb"><img src="media/ski-1.jpg" alt="Snowy alpine ridgeline above Whistler" loading="lazy"></div><div class="ic">🏂</div><h3>Ski &amp; Snowboard</h3><p>Round-trip bus between Squamish and Whistler on weekends, holidays and Pro-D days.</p><div class="price">$30 round trip · 10-pack $280</div><a class="more" href="#ski">Winter schedule →</a></article>
+    <article class="scard"><div class="thumb"><img src="media/mtb-van.jpg" alt="The Shred Shuttle van and bike trailer in the forest" loading="lazy"></div><div class="ic">🚐</div><h3>Private Charters</h3><p>Group rides, events, parties or a custom bike holiday for visiting crews. The whole shuttle, your schedule.</p><div class="price">$160–$190 / hr · 3 hr min</div><a class="more" href="#private">Get a quote →</a></article>
+    <article class="scard"><div class="thumb"><img src="media/wedding-2.jpg" alt="Sparkler send-off at a wedding" loading="lazy"></div><div class="ic">💍</div><h3>Weddings</h3><p>Guest shuttles across Squamish, Whistler &amp; Pemberton. 20, 32 &amp; 40-passenger buses with planning support.</p><div class="price">From $170 / hr + GST</div><a class="more" href="#weddings">Wedding details →</a></article>
   </div>
 </div></section>
 
@@ -124,6 +132,12 @@ table{font-size:.84rem}th,td{padding:10px 12px}}
     <tbody><tr><td>Shred Van HQ · Pemberton Ave</td><td>9:00am</td><td>Thu–Sun</td></tr><tr><td>Dialed In Cycling</td><td>9:15am</td><td>Thu–Sun</td></tr><tr><td>Ride Hub · Garibaldi Plaza</td><td>9:30am · 10:15 wknd</td><td>Thu–Sun</td></tr><tr><td>Pseudo Tsuga Lot · Mamquam Rd</td><td>10am–3pm hourly</td><td>Thu–Sun</td></tr></tbody></table></div>
   <p class="note">Extra half-hour departures added from June 25th. Currently weekends only — full Thu–Sun starts June 25th. Shuttle ride ~20–25 min; a full MOG → Half Nelson → Pseudo Tsuga descent runs ~1.25 hrs.</p>
   <div class="trails"><span class="chip2">Meadow of the Grizzly</span><span class="chip2">19th Hole</span><span class="chip2">Half Nelson</span><span class="chip2">Angry Midget</span><span class="chip2">Ditch Pig</span><span class="chip2">Pseudo Tsuga</span><span class="chip2">Lowdown</span></div>
+  <div class="gallery cols4">
+    <div class="ph"><img src="media/scenery-1.jpg" alt="Shred Shuttle van loaded with mountain bikes at the trailhead" loading="lazy"></div>
+    <div class="ph"><img src="media/mtb-action.jpg" alt="Muddy mountain bikes racked on the shuttle trailer" loading="lazy"></div>
+    <div class="ph"><img src="media/mtb-riders.jpg" alt="Shred Shuttle pickup stop in downtown Squamish" loading="lazy"></div>
+    <div class="ph"><img src="media/private-group.jpg" alt="Rider dropping in on a Diamond Head trail" loading="lazy"></div>
+  </div>
   <div style="margin-top:34px"><a class="btn btn-primary" style="background:#fff;color:#111" href="https://squamishshredshuttle.checkfront.com/reserve/" target="_blank" rel="noopener">Book Your Laps →</a></div>
 </div></section>
 
@@ -137,6 +151,11 @@ table{font-size:.84rem}th,td{padding:10px 12px}}
     <h3 style="font-size:1.25rem;margin:22px 0 8px">Squamish departures</h3>
     <div class="row"><span>Shoppers Drug Mart</span><b>6:30am</b></div><div class="row"><span>Adventure Centre</span><b>6:35am</b></div><div class="row"><span>London Drugs (Brackendale)</span><b>6:45am</b></div><div class="row"><span>Bean Brackendale</span><b>6:55am</b></div>
     <a class="btn btn-out" style="width:100%;justify-content:center;margin-top:18px" href="https://squamishshredshuttle.checkfront.com/reserve/" target="_blank" rel="noopener">Reserve Your Seat</a></div>
+  <div class="gallery cols3" style="grid-column:1/-1">
+    <div class="ph"><img src="media/ski-1.jpg" alt="Snowy alpine ridgeline above Whistler" loading="lazy"></div>
+    <div class="ph"><img src="media/ski-2.jpg" alt="The Shred bus loading in a Squamish snowstorm" loading="lazy"></div>
+    <div class="ph"><img src="media/ski-3.jpg" alt="Skier sending a backcountry jump" loading="lazy"></div>
+  </div>
 </div></section>
 
 <section class="community" id="private2" style="display:none"></section>
@@ -148,6 +167,7 @@ table{font-size:.84rem}th,td{padding:10px 12px}}
   <div><span class="eyebrow">Private Charters</span><h2 class="sec-title">Your group, your schedule</h2>
     <p class="sec-intro">Bike groups, events, bachelor &amp; bachelorette parties, or a fully-planned bike holiday for visiting riders — we build the shuttle plan around you.</p>
     <ul class="flist" style="margin-top:20px"><li>Private bike-group shuttling, any trail network</li><li>Custom multi-day bike holidays for out-of-town crews</li><li>Events &amp; private functions across the Sea to Sky</li><li>Available 7 days a week</li></ul></div>
+  <div class="figure" style="grid-column:1/-1"><img src="media/scenery-2.jpg" alt="The Shred skull bus at dusk, doors open with crew aboard" loading="lazy"></div>
 </div></section>
 
 <section class="band" id="weddings"><div class="wrap">
@@ -162,6 +182,12 @@ table{font-size:.84rem}th,td{padding:10px 12px}}
     <div class="row" style="border-color:rgba(255,255,255,.12)"><span>Planning fee (coordination &amp; minor changes)</span><b style="color:#fff">$100</b></div><div class="row" style="border-color:rgba(255,255,255,.12)"><span>Minimum — day + evening service</span><b style="color:#fff">6 hours</b></div><div class="row" style="border-color:rgba(255,255,255,.12)"><span>Fuel surcharge (outside Squamish)</span><b style="color:#fff">$50–$100 /trip</b></div>
     <p class="note" style="color:rgba(255,255,255,.65)">Time runs from when the bus leaves Squamish to when it returns. Sample quotes: ~$1,120–$1,240 + GST for a 6-hr Squamish wedding; ~$3,630 + GST for a 9-hr Whistler/Pemberton day.</p>
     <a class="btn" style="margin-top:16px;background:#fff;color:#111" href="mailto:theshredshuttle@gmail.com?subject=Wedding%20Shuttle%20Inquiry&body=Date%3A%0AVenue%3A%0APassenger%20count%3A%0APickup%2Fdrop-off%3A%0ATiming%3A">Request a Wedding Quote →</a></div>
+  <div class="gallery cols4">
+    <div class="ph"><img src="media/wedding-2.jpg" alt="Sparkler send-off as the couple kisses" loading="lazy"></div>
+    <div class="ph"><img src="media/wedding-1.jpg" alt="Barn reception with a lit LOVE sign" loading="lazy"></div>
+    <div class="ph"><img src="media/wedding-3.jpg" alt="Sunset toast at an outdoor wedding reception" loading="lazy"></div>
+    <div class="ph"><img src="media/wedding-bus.webp" alt="Wedding party celebrating beside the shuttle bus" loading="lazy"></div>
+  </div>
 </div></section>
 
 <section class="community"><div class="wrap">
@@ -175,11 +201,12 @@ table{font-size:.84rem}th,td{padding:10px 12px}}
   <span class="eyebrow">In good company</span><h2 class="sec-title">Our partners</h2>
   <p class="sec-intro">Local crews we trust for coaching, guiding and a place to crash.</p>
   <div class="grid g3" style="margin-top:34px">
-    <a class="partner" href="https://ridehub.ca/" target="_blank" rel="noopener"><h4>RideHub Squamish</h4><p>Your hub for adventure — premiere cycling adventures and coaching in Squamish, BC.</p><span class="visit">ridehub.ca →</span></a>
-    <a class="partner" href="http://www.ridebc.ca/" target="_blank" rel="noopener"><h4>Ride BC</h4><p>Experience Squamish's world-class MTB trail network with local guides and instructors.</p><span class="visit">ridebc.ca →</span></a>
-    <a class="partner" href="https://www.adarahotel.com/" target="_blank" rel="noopener"><h4>Adara Hotel</h4><p>Boutique hotel in Whistler Village, ~5 min from the lifts.</p><span class="visit">adarahotel.com →</span></a>
+    <a class="partner" href="https://ridehub.ca/" target="_blank" rel="noopener"><img class="plogo" src="media/partner-ridehub.png" alt="RideHub Squamish logo"><h4>RideHub Squamish</h4><p>Your hub for adventure — premiere cycling adventures and coaching in Squamish, BC.</p><span class="visit">ridehub.ca →</span></a>
+    <a class="partner" href="http://www.ridebc.ca/" target="_blank" rel="noopener"><img class="plogo" src="media/partner-ridebc.png" alt="Ride BC logo"><h4>Ride BC</h4><p>Experience Squamish's world-class MTB trail network with local guides and instructors.</p><span class="visit">ridebc.ca →</span></a>
+    <a class="partner" href="https://www.adarahotel.com/" target="_blank" rel="noopener"><img class="plogo" src="media/partner-adara.png" alt="Adara Hotel logo"><h4>Adara Hotel</h4><p>Boutique hotel in Whistler Village, ~5 min from the lifts.</p><span class="visit">adarahotel.com →</span></a>
   </div>
   <p class="sec-intro" style="margin-top:28px">Need a tune or an engine fixed? Sister shop <a href="http://www.shredshedrepairs.com" target="_blank" rel="noopener" style="font-weight:700;text-decoration:underline">The Shred Shed</a> handles bikes, dirt bikes, sleds, ATVs, trucks &amp; small engines — Mon–Fri, 9am–5:30pm.</p>
+  <div class="shed-fig"><img src="media/scenery-3.jpg" alt="Inside The Shred Shed repair shop — sleds, ATVs and a truck on the hoist" loading="lazy"></div>
 </div></section>
 
 <section class="band" id="faq"><div class="wrap">
